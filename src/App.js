@@ -17,6 +17,7 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
+import ElementCreator from './elementCreator'
 
 class App extends Component {
   state = {
@@ -41,13 +42,13 @@ class App extends Component {
   }
 
   render() {
-    console.log("this is state" + this.state.input)
     return (
       <div className="App">
        <header className="App-header">
-        <div>{this.state.test}</div>
+       <ElementCreator starTrek={this.state.list}/>
         <form onSubmit={this.onSubmit}>
-        <input value={this.state.input} onChange={this.onChange}/>
+         <input value={this.state.input} onChange={this.onChange}/>
+        <br/>
         <button>Submit</button>
         </form>
        </header>
