@@ -1,18 +1,4 @@
-// import React from 'react';
-// import logo from './logo.svg';
-// import './App.css';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//        <div>Hello</div>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
 
 import React, { Component } from 'react';
 // import logo from './logo.svg';
@@ -44,6 +30,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <h1>TODOS</h1>
        <header className="App-header">
        <ElementCreator starTrek={this.state.list}/>
         <form onSubmit={this.onSubmit}>
