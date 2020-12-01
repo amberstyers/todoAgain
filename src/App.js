@@ -1,9 +1,9 @@
 
 
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './App.css';
-import ElementCreator from './elementCreator'
+import ElementCreator from './ElementCreator'
+
 
 class App extends Component {
   state = {
@@ -30,7 +30,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <h1>TODOS</h1>
+      <h1>Todo List</h1>
        <header className="App-header">
        <ElementCreator starTrek={this.state.list}/>
         <form onSubmit={this.onSubmit}>
@@ -38,11 +38,13 @@ class App extends Component {
         <br/>
         <button>Submit</button>
         </form>
+        <h1>What is this here for</h1>
        </header>
      </div>
       
     );
   }
 }
+
 
 export default App;
